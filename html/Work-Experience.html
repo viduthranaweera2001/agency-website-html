@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Vertical Layouts - Forms | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo ">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+          <img src="../images/logo.png" alt="">
+        </span>
+              <span class="text">TRUST INTERNATIONAL <br> RECRUITMENT</span>
+            </a>
+        
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto" onclick="toggleMenu()" id="menu-toggle">
+              <i class="bx bx-chevron-left bx-sm d-flex align-items-center justify-content-center"></i>
+            </a>
+            
+          </div>
+        
+          <div class="menu-inner-shadow"></div>
+        
+          <ul class="menu-inner py-1" style="margin-top: 30px;">
+            <li class="menu-item active open">
+              <a href="app-email.html" class="menu-link">
+                <i class="menu-icon tf-icons ri-user-line"></i>
+                <div class="text-truncate" data-i18n="Email">New User</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="app-email.html" class="menu-link">
+                <i class="menu-icon tf-icons ri-group-3-line"></i>
+                <div class="text-truncate" data-i18n="Email">My Clients</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ri-calendar-line"></i>
+                <div class="text-truncate" data-i18n="Dashboards">Reminders</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item active">
+                  <a href="dashboards-analytics.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Analytics">Client Reminders</div>
+                  </a>
+                </li>
+            
+                <li class="menu-item">
+                  <a href="app-academy-dashboard.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Academy">My Reminders</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+                
+            <li class="menu-item">
+              <a href="app-email.html" class="menu-link">
+                <!-- <i class="menu-icon tf-icons bx bx-envelope"></i> -->
+                <i class="menu-icon tf-icons ri-bar-chart-2-line"></i>
+                <div class="text-truncate" data-i18n="Email">Analytics</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="app-chat.html" class="menu-link">
+                <i class="menu-icon tf-icons ri-inbox-line"></i>
+                <div class="text-truncate" data-i18n="Chat">Inbox</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="app-chat.html" class="menu-link">
+                <i class="menu-icon tf-icons ri-calendar-line"></i>
+                <div class="text-truncate" data-i18n="Chat">Messages</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="app-chat.html" class="menu-link">
+                <i class="menu-icon tf-icons ri-file-list-3-line"></i>
+                <div class="text-truncate" data-i18n="Chat">News</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="app-chat.html" class="menu-link">
+                <i class="menu-icon tf-icons ri-settings-2-line"></i>
+                <div class="text-truncate" data-i18n="Chat">Settings</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-cog me-2"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <span class="d-flex align-items-center align-middle">
+                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                          <span class="flex-grow-1 align-middle">Billing</span>
+                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="auth-login-basic.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y con-0">
+              <h5>Register New client</h5>
+                    <div class="con-1">
+                      <div class="tabs-bar">
+                        <a href="Personal-Information.html"><div class="tab-1" style="text-decoration: none; color: black;"><img src="../images/correct.png" style="width: 15px;height: 15px;margin-right: 5px;" alt="">Personal Information</div></a>
+                        <a href="Work-Experience.html" style="border-bottom: 2px solid #696cff; color: #696cff;"><div class="tab-2"><img src="../images/close.png" style="width: 15px;height: 15px;margin-right: 5px;" alt="">Work Experience</div></a>
+                        <a href="" style="text-decoration: none; color: black;"><div class="tab-3"><img src="../images/correct.png" style="width: 15px;height: 15px;margin-right: 5px;" alt="">Country of Interest</div></a>
+                        <a href="" style="text-decoration: none; color: black;"><div class="tab-4"><img src="../images/correct.png" style="width: 15px;height: 15px;margin-right: 5px;" alt="">Skills & Qualifications</div></a>
+                        <a href="" style="text-decoration: none; color: black;"><div class="tab-5"><img src="../images/correct.png" style="width: 15px;height: 15px;margin-right: 5px;" alt="">Visa & History</div></a>
+                        <a href="" style="text-decoration: none; color: black;"><div class="tab-6"><img src="../images/correct.png" style="width: 15px;height: 15px;margin-right: 5px;" alt="">Payment</div></a>
+                        <a href="" style="text-decoration: none; color: black;"><div class="tab-7"><img src="../images/correct.png" style="width: 15px;height: 15px;margin-right: 5px;" alt="">Document</div></a>
+                      </div>
+                      <div class="tabs-bar-content">
+                        <div class="topic-0">
+                          <div class="topic-1">
+                            <h5>Work Experience</h5>
+                          </div>
+                          <div class="topic-2">
+                            *Required
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="card-body pt-4">
+                        <form id="formAccountSettings" method="GET" onsubmit="return false">
+                          <div class="row g-6">
+                            <div class="col-md-6" style="margin-top: 20px;">
+                              <label for="firstName" class="form-label">Company Name</label>
+                              <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Your Company Name" autofocus style="width: 1150px" />
+                            </div>
+                            <div class="row g-6">
+                              <div class="col-md-6" style="margin-top: 20px;">
+                                <label for="firstName" class="form-label">Designation / Job Role</label>
+                                <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Your Designation" autofocus style="width: 1150px" />
+                              </div>
+                              
+                            </div>
+                            
+                            <div class="row g-6">
+                              <div class="col-md-6">
+                                <label for="zipCode" class="form-label" style="margin-top: 20px;">Start Date</label>
+                                <input class="form-control" type="date" value="" id="html5-date-input" placeholder="Date of Birthday"/>
+                              </div>
+                              <div class="col-md-6">
+                                <label for="zipCode" class="form-label" style="margin-top: 20px;">End Date</label>
+                                <input class="form-control" type="date" value="" id="html5-date-input" placeholder="Date of Birthday"/>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div style="width: 100%; height: 50px; display: flex;">
+                            <div style="width: 50%; height: 50px; display: flex;"></div>
+                            <div style="width: 50%; height: 50px;  display: flex;align-items: end;">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                <label class="form-check-label" for="defaultCheck1">
+                                  I am currently working
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-end" style="margin-top: 20px; margin-right: 30px;">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                        </form>
+            
+                          <!-- Basic Bootstrap Table -->
+                          <div class="card" style="margin-top: 30px;">
+                            <div class="table-responsive text-nowrap">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Company Name <i class="ri-arrow-down-line"></i></th>
+                                    <th>Designation / Job role <i class="ri-arrow-down-line"></i></th>
+                                    <th>Start Date <i class="ri-arrow-down-line"></i></th>
+                                    <th>End Date <i class="ri-arrow-down-line"></i></th>
+                                    <th>Action <i class="ri-arrow-down-line"></i></th>
+                                  </tr>
+                                </thead>
+                                <tbody class="table-border-bottom-0">
+                                  <tr>
+                                    <td>Zerocode Software</td>
+                                    <td>Software Engineer</td>
+                                    <td>2024/03/24</td>
+                                    <td>2024/03/24</td>                                    
+                                    <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>Zerocode Software</td>
+                                    <td>Software Engineer</td>
+                                    <td>2024/03/24</td>
+                                    <td>2024/03/24</td>                                    
+                                    <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>Zerocode Software</td>
+                                    <td>Software Engineer</td>
+                                    <td>2024/03/24</td>
+                                    <td>2024/03/24</td>                                    
+                                    <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>Zerocode Software</td>
+                                    <td>Software Engineer</td>
+                                    <td>2024/03/24</td>
+                                    <td>2024/03/24</td>                                    
+                                    <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                    
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div
+                      </div>
+                    </div>
+                        
+              
+              </div>
+            </div>
+
+            <div class="content-backdrop fade"></div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../js/script.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
