@@ -144,3 +144,35 @@
     display: block;
   }
 
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image {
+    display: block;
+    transition: filter 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .image-container:hover .image {
+    filter: brightness(0.5);
+  }
+  
+  .edit-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 24px; 
+    color: white; 
+    cursor: pointer;
+  }
+  
+  .image-container:hover .edit-icon {
+    opacity: 1;
+  }
+  
+  

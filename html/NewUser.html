@@ -241,8 +241,12 @@
                   </div>
 
                   <div class="card-body">
-                    <div class="d-flex align-items-start align-items-sm-center gap-6 pb-4 border-bottom">
-                      <img src="../../assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded" id="uploadedAvatar" />
+                    <div class="d-flex align-items-start align-items-sm-center gap-6 pb-4 border-bottom" >
+                      <div class="image-container">
+                        <img src="../../assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded image" id="uploadedAvatar" />
+                        <i class="ri-edit-line edit-icon"></i>
+                        <input type="file" id="fileInput" accept=".png, .jpg, .jpeg" style="display: none;" />
+                      </div>    
                       <div class="button-wrapper">
 
                         <form style="width: 550px;">
@@ -332,7 +336,7 @@
               
               <div class="con-2-b">
 
-                <div class="tabs-bar-content">
+                <div class="tabs-bar-content" style="padding-left: 20px;">
                   <div class="topic-0">
                     <div class="topic-1">
                       <h5>Work Experience</h5>
@@ -385,8 +389,6 @@
                       <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                   </form>
-      
-                    <!-- Basic Bootstrap Table -->
                     <div class="card" style="margin-top: 30px;">
                       <div class="table-responsive text-nowrap">
                         <table class="table">
