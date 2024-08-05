@@ -217,6 +217,7 @@
             <div class="container-xxl flex-grow-1 container-p-y con-0">
               <h5>Register New client</h5>
               <div class="con-1">
+
                 <div class="con-2">
                   <div class="con-2-i active"><img src="../images/correct.png" alt="">Personal Information</div>
                   <div class="con-2-ii"><img src="../images/correct.png" alt="">Work Experience</div>
@@ -264,11 +265,10 @@
                   <div class="card-body pt-4">
                     <form id="formAccountSettings" method="GET" onsubmit="return false">
                       <div class="row g-6">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                           <label for="firstName" class="form-label">Full Name</label>
-                          <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Your Name" autofocus style="width: 1135px" />
+                          <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Your Name"/>
                         </div>
-                        <div class="row g-6">
                           <div class="col-md-6">
                             <label for="address" class="form-label" style="margin-top: 20px;">Address</label>
                             <input type="text" class="form-control" id="address" name="address" placeholder="Enter Your Address" />
@@ -322,10 +322,9 @@
                               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
                               <label class="form-check-label" for="inlineRadio2">Single</label>
                             </div>
-                          </div>
                         </div>
                       </div>
-                      <div class="d-flex justify-content-end" style="margin-top: 40px; margin-right: 30px;">
+                      <div class="d-flex justify-content-end" style="margin-top: 40px;">
                         <button type="submit" class="btn btn-primary">Save</button>
                       </div>
                     </form>
@@ -350,33 +349,28 @@
                 <div class="card-body pt-4">
                   <form id="formAccountSettings" method="GET" onsubmit="return false">
                     <div class="row g-6">
-                      <div class="col-md-6" style="margin-top: 20px;">
+                      <div class="col-md-12" style="margin-top: 20px;">
                         <label for="firstName" class="form-label">Company Name</label>
-                        <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Your Company Name" autofocus style="width: 1150px" />
+                        <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Your Company Name"/>
                       </div>
-                      <div class="row g-6">
-                        <div class="col-md-6" style="margin-top: 20px;">
+                        <div class="col-md-12" style="margin-top: 20px;">
                           <label for="firstName" class="form-label">Designation / Job Role</label>
-                          <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Your Designation" autofocus style="width: 1150px" />
-                        </div>
-                        
+                          <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Your Designation"" />
                       </div>
                       
-                      <div class="row g-6">
                         <div class="col-md-6">
                           <label for="zipCode" class="form-label" style="margin-top: 20px;">Start Date</label>
-                          <input class="form-control" type="date" value="" id="html5-date-input" placeholder="Date of Birthday" style="width: 570px;"/>
+                          <input class="form-control" type="date" value="" id="html5-date-input" placeholder="Date of Birthday" />
                         </div>
                         <div class="col-md-6">
                           <label for="zipCode" class="form-label" style="margin-top: 20px;">End Date</label>
-                          <input class="form-control" type="date" value="" id="html5-date-input" placeholder="Date of Birthday" style="width: 570px;"/>
+                          <input class="form-control" type="date" value="" id="html5-date-input" placeholder="Date of Birthday"/>
                         </div>
-                      </div>
                       
                     </div>
                     <div style="width: 100%; height: 50px; display: flex;">
                       <div style="width: 50%; height: 50px; display: flex;"></div>
-                      <div style="width: 50%; height: 50px;  display: flex;align-items: end;">
+                      <div style="width: 50%; height: 50px;  display: flex; align-items: end; margin-left: 25px;">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
                           <label class="form-check-label" for="defaultCheck1">
@@ -389,6 +383,7 @@
                       <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                   </form>
+
                     <div class="card" style="margin-top: 30px;">
                       <div class="table-responsive text-nowrap">
                         <table class="table">
@@ -442,11 +437,264 @@
               </div>
 
               <div class="con-2-c">
-                  <h1>3</h1>
+
+                <div class="tabs-bar-content" style="padding-left: 20px;">
+                  <div class="topic-0">
+                    <div class="topic-1">
+                      <h5>Country of Interest</h5>
+                    </div>
+                    <div class="topic-2">
+                      *Required
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body pt-4">
+                  <form id="formAccountSettings" method="GET" onsubmit="return false">
+                    <div class="row g-6">
+                      <div class="col-md-12">
+                        <label class="form-label" for="country" >Country Name</label>
+                        <select id="country" class="select2 form-select">
+                          <option value="">Select Country</option>
+                          <option value="Australia">Australia</option>
+                          <option value="Bangladesh">Bangladesh</option>
+                          <option value="Belarus">Belarus</option>
+                          <option value="Brazil">Brazil</option>
+                          <option value="Canada">Canada</option>
+                          <option value="China">China</option>
+                          <option value="France">France</option>
+                          <option value="Germany">Germany</option>
+                          <option value="India">India</option>
+                          <option value="Indonesia">Indonesia</option>
+                          <option value="Israel">Israel</option>
+                          <option value="Italy">Italy</option>
+                          <option value="Japan">Japan</option>
+                          <option value="Korea">Korea, Republic of</option>
+                          <option value="Mexico">Mexico</option>
+                          <option value="Philippines">Philippines</option>
+                          <option value="Russia">Russian Federation</option>
+                          <option value="South Africa">South Africa</option>
+                          <option value="Thailand">Thailand</option>
+                          <option value="Turkey">Turkey</option>
+                          <option value="Ukraine">Ukraine</option>
+                          <option value="United Arab Emirates">United Arab Emirates</option>
+                          <option value="United Kingdom">United Kingdom</option>
+                          <option value="United States">United States</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-12">
+                        <label class="form-label" for="country" style="margin-top: 20px;">Interested Job</label>
+                        <select id="country" class="select2 form-select">
+                          <option value="">Select Interested Job Role</option>
+                          <option value="Australia">Cleaning</option>
+                          <option value="Bangladesh">Driving</option>
+                          <option value="Belarus">Coding</option>
+                          <option value="Brazil">Washing</option>
+                          <option value="Australia">Cleaning</option>
+                          <option value="Bangladesh">Driving</option>
+                          <option value="Belarus">Coding</option>
+                          <option value="Brazil">Washing</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-12">
+                        <label class="form-label" for="country" style="margin-top: 20px;">Priority Order</label>
+                        <select id="country" class="select2 form-select">
+                          <option value="">Select Priority Order</option>
+                          <option value="Australia">Order 1</option>
+                          <option value="Bangladesh">Order 2</option>
+                          <option value="Belarus">Order 3</option>
+                          <option value="Brazil">Order 4</option>
+                          <option value="United Arab Emirates">Order 5</option>
+                          <option value="United Kingdom">Order 6</option>
+                          <option value="United States">Order 7</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end" style="margin-top: 40px;">
+                      <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                  </form>
+                  <div class="card" style="margin-top: 30px;">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Country Name <i class="ri-arrow-down-line"></i></th>
+                            <th>Priority Order<i class="ri-arrow-down-line"></i></th>
+                            <th>Interested Job<i class="ri-arrow-down-line"></i></th>
+                            <th>Action <i class="ri-arrow-down-line"></i></th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <td>Japan</td>
+                            <td>Order 1</td>
+                            <td>Driving</td>                              
+                            <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                            
+                          </tr>
+                          <tr>
+                            <td>Japan</td>
+                            <td>Order 2</td>
+                            <td>Cleaning</td>                              
+                            <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                            
+                          </tr>
+                          <tr>
+                            <td>China</td>
+                            <td>Order 3</td>
+                            <td>Driving</td>                              
+                            <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                            
+                          </tr>
+                          <tr>
+                            <td>China</td>
+                            <td>Order 4</td>
+                            <td>Cleaning</td>                                 
+                            <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+
               <div class="con-2-d">
-                  <h1>4</h1>
+
+                <div class="tabs-bar-content" style="padding-left: 20px;">
+                  <div class="topic-0">
+                    <div class="topic-1">
+                      <h5>Skills & Qualification</h5>
+                    </div>
+                    <div class="topic-2">
+                      *Required
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sq-con-1">
+                  <div class="sq-con-2">
+                    <div class="sq-con-3">
+                      <div><p>What do you want to add?</p></div>
+                      <div class="sq-con-3-a">
+                        <div class="form-check form-check-inline" style="margin-left: 15px;">
+                          <input class="form-check-input opt1" type="radio" style="margin-top: 10px;" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked/>
+                          <img src="../images/visa-light.png" alt="Education Image" style="margin: 0 5px;"/>
+                          <label class="form-check-label" for="inlineRadio1">Education</label>
+                        </div>
+                      </div>
+                      <div class="sq-con-3-b">
+                        <div class="form-check form-check-inline" style="margin-left: 15px;">
+                          <input class="form-check-input opt2" type="radio" style="margin-top: 10px; " name="inlineRadioOptions" id="inlineRadio2" value="option2"/>
+                          <img src="../images/paypal-light.png" alt="Skills Image" style="margin: 0 5px;"/>
+                          <label class="form-check-label" for="inlineRadio2">Skills</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="educationContent" class="content-section">
+                      <div class="card-body pt-4" style="margin: 0; padding: 0;">
+                        <form id="formAccountSettings" method="GET" onsubmit="return false">
+                          <div class="row g-6">
+      
+                            <div class="col-md-12">
+                              <label class="form-label" for="country" style="margin-top: 20px;">Education Qualification</label>
+                              <select id="country" class="select2 form-select">
+                                <option value="">Select Education Qualification</option>
+                                <option value="Australia">Ordinary Level</option>
+                                <option value="Australia">Advanced Level</option>
+                              </select>
+                            </div>
+      
+                            <div class="col-md-12">
+                              <label for="zipCode" class="form-label" style="margin-top: 20px;">Granted year</label>
+                              <input class="form-control" type="date" value="" id="html5-date-input" placeholder="Date of Birthday"/>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-end" style="margin-top: 40px;">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                        </form>
+                        <div class="card" style="margin-top: 30px;">
+                          <div class="table-responsive text-nowrap">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Education Qualification <i class="ri-arrow-down-line"></i></th>
+                                  <th>Granted Year<i class="ri-arrow-down-line"></i></th>
+                                  <th>Action <i class="ri-arrow-down-line"></i></th>
+                                </tr>
+                              </thead>
+                              <tbody class="table-border-bottom-0">
+                                <tr>
+                                  <td>Advanced Level</td>
+                                  <td>2020</td>                              
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>Ordinary Level</td>
+                                  <td>2017</td>                              
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>Advanced Level</td>
+                                  <td>2022</td>                              
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>Ordinary Level</td>
+                                  <td>2019</td>                                 
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="skillsContent" class="content-section" style="display: none;">
+                      <div class="card-body pt-4" style="margin: 0; padding: 0;">
+                        <form id="formAccountSettings" method="GET" onsubmit="return false">
+                          <div class="row g-6">
+                    
+                            <div class="col-md-12">
+                              <label class="form-label" for="skills" style="margin-top: 20px;">Skill</label>
+                              <select id="skills" class="select2 form-select">
+                                <option value="">Select Skills</option>
+                                <option value="Skill 1">Skill 1</option>
+                                <option value="Skill 2">Skill 2</option>
+                                <option value="Skill 3">Skill 3</option>
+                                <option value="Skill 4">Skill 4</option>
+                              </select>
+                            </div>
+                    
+                            <!-- Display Selected Skills -->
+                            <div class="col-md-12" id="selectedSkillsContainer" style="margin-top: 20px; display: flex; flex-wrap: wrap;">
+                              <!-- Selected skills will be displayed here -->
+                            </div>
+                    
+                            <div class="d-flex justify-content-end" style="margin-top: 40px;">
+                              <button type="submit" class="btn btn-primary">Save</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                
+
               </div>
+
               <div class="con-2-e">
                   <h1>5</h1>
               </div>
