@@ -29,42 +29,6 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
 });
 
 
-function displayContent() {
-  const educationContent = document.getElementById('educationContent');
-  const skillsContent = document.getElementById('skillsContent');
-  const con3a = document.querySelector('.sq-con-3-a');
-  const con3b = document.querySelector('.sq-con-3-b');
-  
-  if (document.querySelector('.opt1').checked) {
-    educationContent.style.display = 'block';
-    skillsContent.style.display = 'none';
-    
-    
-    con3a.style.border = '2px solid #007bff';
-    con3b.style.border = '1px solid rgb(207, 205, 234)';
-  } else if (document.querySelector('.opt2').checked) {
-    educationContent.style.display = 'none';
-    skillsContent.style.display = 'block';
-    
-    
-    con3a.style.border = '1px solid rgb(207, 205, 234)';
-    con3b.style.border = '2px solid #007bff';
-  }
-}
-
-document.querySelector('.sq-con-3-a').addEventListener('click', function() {
-  document.querySelector('.opt1').checked = true;
-  displayContent();
-});
-
-document.querySelector('.sq-con-3-b').addEventListener('click', function() {
-  document.querySelector('.opt2').checked = true;
-  displayContent();
-});
-
-displayContent();
-
-
 const skillsDropdown = document.getElementById('skills');
   const selectedSkillsContainer = document.getElementById('selectedSkillsContainer');
   const selectedSkills = new Set();
@@ -106,3 +70,76 @@ const skillsDropdown = document.getElementById('skills');
 
     skillsDropdown.value = "";
   });
+
+  function displayContent1() {
+    const educationContent = document.getElementById('educationContent');
+    const skillsContent = document.getElementById('skillsContent');
+    const con3a = document.querySelector('.sq-con-3-a');
+    const con3b = document.querySelector('.sq-con-3-b');
+    
+    if (document.querySelector('.opt1').checked) {
+      educationContent.style.display = 'block';
+      skillsContent.style.display = 'none';
+      
+      con3a.style.border = '2px solid #007bff';
+      con3b.style.border = '1px solid rgb(207, 205, 234)';
+    } else if (document.querySelector('.opt2').checked) {
+      educationContent.style.display = 'none';
+      skillsContent.style.display = 'block';
+      
+      con3a.style.border = '1px solid rgb(207, 205, 234)';
+      con3b.style.border = '2px solid #007bff';
+    }
+  }
+  
+  document.querySelector('.sq-con-3-a').addEventListener('click', function() {
+    document.querySelector('.opt1').checked = true;
+    displayContent1();
+  });
+  
+  document.querySelector('.sq-con-3-b').addEventListener('click', function() {
+    document.querySelector('.opt2').checked = true;
+    displayContent1();
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.opt1').checked = true;
+    displayContent1();
+  });
+  
+  function displayContent2() {
+    const educationContent = document.getElementById('visarej');
+    const skillsContent = document.getElementById('visagra');
+    const con6a = document.querySelector('.sq-con-6-a');
+    const con6b = document.querySelector('.sq-con-6-b');
+    
+    if (document.querySelector('.opt3').checked) {
+      educationContent.style.display = 'block';
+      skillsContent.style.display = 'none';
+      
+      con6a.style.border = '2px solid #007bff';
+      con6b.style.border = '1px solid rgb(207, 205, 234)';
+    } else if (document.querySelector('.opt4').checked) {
+      educationContent.style.display = 'none';
+      skillsContent.style.display = 'block';
+      
+      con6a.style.border = '1px solid rgb(207, 205, 234)';
+      con6b.style.border = '2px solid #007bff';
+    }
+  }
+  
+  document.querySelector('.sq-con-6-a').addEventListener('click', function() {
+    document.querySelector('.opt3').checked = true;
+    displayContent2();
+  });
+  
+  document.querySelector('.sq-con-6-b').addEventListener('click', function() {
+    document.querySelector('.opt4').checked = true;
+    displayContent2();
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.opt3').checked = true;
+    displayContent2();
+  });
+  

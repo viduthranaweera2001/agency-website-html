@@ -582,16 +582,16 @@
                       <div><p>What do you want to add?</p></div>
                       <div class="sq-con-3-a">
                         <div class="form-check form-check-inline" style="margin-left: 15px;">
-                          <input class="form-check-input opt1" type="radio" style="margin-top: 10px;" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked/>
+                          <input class="form-check-input opt1" type="radio" style="margin-top: 10px;" name="inlineRadioOptions3" id="inlineRadio3" value="option1" checked/>
                           <img src="../images/visa-light.png" alt="Education Image" style="margin: 0 5px;"/>
-                          <label class="form-check-label" for="inlineRadio1">Education</label>
+                          <label class="form-check-label" for="inlineRadio3">Education</label>
                         </div>
                       </div>
                       <div class="sq-con-3-b">
                         <div class="form-check form-check-inline" style="margin-left: 15px;">
-                          <input class="form-check-input opt2" type="radio" style="margin-top: 10px; " name="inlineRadioOptions" id="inlineRadio2" value="option2"/>
+                          <input class="form-check-input opt2" type="radio" style="margin-top: 10px;" name="inlineRadioOptions3" id="inlineRadio4" value="option2"/>
                           <img src="../images/paypal-light.png" alt="Skills Image" style="margin: 0 5px;"/>
-                          <label class="form-check-label" for="inlineRadio2">Skills</label>
+                          <label class="form-check-label" for="inlineRadio4">Skills</label>
                         </div>
                       </div>
                     </div>
@@ -696,7 +696,218 @@
               </div>
 
               <div class="con-2-e">
-                  <h1>5</h1>
+
+                <div class="tabs-bar-content" style="padding-left: 20px;">
+                  <div class="topic-0">
+                    <div class="topic-1">
+                      <h5>Visa & History</h5>
+                    </div>
+                    <div class="topic-2">
+                      *Required
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sq-con-4">
+                  <div class="sq-con-5">
+                    <div class="sq-con-6">
+                      <div><p>What do you want to add?</p></div>
+                      <div class="sq-con-6-a">
+                        <div class="form-check form-check-inline" style="margin-left: 15px;">
+                          <input class="form-check-input opt3" type="radio" style="margin-top: 10px;" name="inlineRadioOptions6" id="inlineRadio1" value="option1" checked/>
+                          <img src="../images/visa-light.png" alt="Education Image" style="margin: 0 5px;"/>
+                          <label class="form-check-label" for="inlineRadio1">Visa Rejected</label>
+                        </div>
+                      </div>
+                      <div class="sq-con-6-b">
+                        <div class="form-check form-check-inline" style="margin-left: 15px;">
+                          <input class="form-check-input opt4" type="radio" style="margin-top: 10px;" name="inlineRadioOptions6" id="inlineRadio2" value="option2"/>
+                          <img src="../images/paypal-light.png" alt="Skills Image" style="margin: 0 5px;"/>
+                          <label class="form-check-label" for="inlineRadio2">Visa Granted</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="visarej" class="content-section">
+                      <div class="card-body pt-4" style="margin: 0; padding: 0;">
+                        <form id="formAccountSettings" method="GET" onsubmit="return false">
+                          <div class="row g-6">
+      
+                            <div class="col-md-12">
+                              <label class="form-label" for="country" style="margin-top: 20px;">country name</label>
+                              <select id="country" class="select2 form-select">
+                                <option value="">Select Country</option>
+                                <option value="Australia">China</option>
+                                <option value="Australia">Japan</option>
+                                <option value="Australia">India</option>
+                                <option value="Australia">Australia</option>
+                              </select>
+                            </div>
+      
+                            <div class="col-md-12">
+                              <label for="zipCode" class="form-label" style="margin-top: 20px;">Rejected year</label>
+                              <input class="form-control" type="date" value="" id="html5-date-input" placeholder="Date of Birthday"/>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="firstName" class="form-label" style="margin-top: 20px;">Reason</label>
+                              <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Reject Reason"/>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-end" style="margin-top: 40px;">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                        </form>
+                        <div class="card" style="margin-top: 30px;">
+                          <div class="table-responsive text-nowrap">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Country <i class="ri-arrow-down-line"></i></th>
+                                  <th>REjected Year<i class="ri-arrow-down-line"></i></th>
+                                  <th>Reason<i class="ri-arrow-down-line"></i></th>
+                                  <th>Action <i class="ri-arrow-down-line"></i></th>
+                                </tr>
+                              </thead>
+                              <tbody class="table-border-bottom-0">
+                                <tr>
+                                  <td>Japan</td>
+                                  <td>2020</td>                              
+                                  <td>Visa</td>                              
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>China</td>
+                                  <td>2017</td>                              
+                                  <td>Visa</td>                              
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>India</td>
+                                  <td>2022</td>                              
+                                  <td>Visa</td>                              
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>Australia</td>
+                                  <td>2019</td>                                 
+                                  <td>Visa</td>                                 
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="visagra" class="content-section" style="display: none;">
+                      <div class="card-body pt-4" style="margin: 0; padding: 0;">
+                        <form id="formAccountSettings" method="GET" onsubmit="return false">
+                          <div class="row g-6">
+                    
+                            <div class="col-md-12">
+                              <label class="form-label" for="country" style="margin-top: 20px;">country name</label>
+                              <select id="country" class="select2 form-select">
+                                <option value="">Select Country</option>
+                                <option value="Australia">China</option>
+                                <option value="Australia">Japan</option>
+                                <option value="Australia">India</option>
+                                <option value="Australia">Australia</option>
+                              </select>
+                            </div>
+
+                            <div class="col-md-12">
+                              <label for="firstName" class="form-label" style="margin-top: 20px;">Duration (months)</label>
+                              <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Duration In Months"/>
+                            </div>
+
+                            <div class="col-md-12">
+                              <label class="form-label" for="country" style="margin-top: 20px;">visa Category</label>
+                              <select id="country" class="select2 form-select">
+                                <option value="">Select Visa Category</option>
+                                <option value="Australia">China</option>
+                                <option value="Australia">Japan</option>
+                                <option value="Australia">India</option>
+                                <option value="Australia">Australia</option>
+                              </select>
+                            </div>
+
+                            <div class="col-md-6">
+                              <label for="zipCode" class="form-label" style="margin-top: 20px;">Granted Date</label>
+                              <input class="form-control" type="date" value="" id="html5-date-input"  />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="zipCode" class="form-label" style="margin-top: 20px;">Expire Date</label>
+                              <input class="form-control" type="date" value="" id="html5-date-input"/>
+                            </div>
+                    
+                            <div class="d-flex justify-content-end" style="margin-top: 40px;">
+                              <button type="submit" class="btn btn-primary">Save</button>
+                            </div>
+                          </div>
+                        </form>
+                        <div class="card" style="margin-top: 30px;">
+                          <div class="table-responsive text-nowrap">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Country <i class="ri-arrow-down-line"></i></th>
+                                  <th>Duration (months)<i class="ri-arrow-down-line"></i></th>
+                                  <th>Visa Category<i class="ri-arrow-down-line"></i></th>
+                                  <th>Granted Year<i class="ri-arrow-down-line"></i></th>
+                                  <th>Expire Year<i class="ri-arrow-down-line"></i></th>
+                                  <th>Action <i class="ri-arrow-down-line"></i></th>
+                                </tr>
+                              </thead>
+                              <tbody class="table-border-bottom-0">
+                                <tr>
+                                  <td>Japan</td>
+                                  <td>12</td>                              
+                                  <td>Business</td>                              
+                                  <td>2020</td>                              
+                                  <td>2021</td>                              
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>China</td>
+                                  <td>24</td>                              
+                                  <td>Job</td>                              
+                                  <td>2022</td>                              
+                                  <td>2024</td>                              
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>India</td>
+                                  <td>12</td>                              
+                                  <td>Visitor</td>                              
+                                  <td>2019</td>                              
+                                  <td>2020</td>                              
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>Australia</td>
+                                  <td>36</td>                                 
+                                  <td>Student</td>                                 
+                                  <td>2024</td>                                 
+                                  <td>2027</td>                                 
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
               <div class="con-2-f">
                   <h1>6</h1>
