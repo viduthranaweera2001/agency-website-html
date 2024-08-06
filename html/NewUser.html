@@ -909,11 +909,258 @@
                 </div>
 
               </div>
+
               <div class="con-2-f">
-                  <h1>6</h1>
+
+                <div class="tabs-bar-content" style="padding-left: 20px;">
+                  <div class="topic-0">
+                    <div class="topic-1">
+                      <h5>Payment</h5>
+                    </div>
+                    <div class="topic-2">
+                      *Required
+                    </div>
+                  </div>
+                </div>
+                 
+                <div class="sq-con-7">
+                  <div class="sq-con-8">
+                    <div class="sq-con-9">
+                      <div><p>What are you looking for?</p></div>
+                      <div class="sq-con-9-a">
+                        <div class="form-check form-check-inline" style="margin-left: 15px;">
+                          <input class="form-check-input opt5" type="radio" style="margin-top: 10px;" name="inlineRadioOptions7" id="inlineRadio5" value="option1" checked/>
+                          <img src="../images/visa-light.png" alt="Education Image" style="margin: 0 5px;"/>
+                          <label class="form-check-label" for="inlineRadio5">Payment Plan</label>
+                        </div>
+                      </div>
+                      <div class="sq-con-9-b">
+                        <div class="form-check form-check-inline" style="margin-left: 15px;">
+                          <input class="form-check-input opt6" type="radio" style="margin-top: 10px;" name="inlineRadioOptions7" id="inlineRadio6" value="option2"/>
+                          <img src="../images/paypal-light.png" alt="Skills Image" style="margin: 0 5px;"/>
+                          <label class="form-check-label" for="inlineRadio6">Received History</label>
+                        </div>
+                      </div>
+                      <div class="sq-con-9-b">
+                        <div class="form-check form-check-inline" style="margin-left: 15px;">
+                          <input class="form-check-input opt7" type="radio" style="margin-top: 10px;" name="inlineRadioOptions7" id="inlineRadio7" value="option3"/>
+                          <img src="../images/visa-light.png" alt="Skills Image" style="margin: 0 5px;"/>
+                          <label class="form-check-label" for="inlineRadio7">Invoices</label>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div id="invoi" class="content-section">
+                      <div class="card-body pt-4" style="margin: 0; padding: 0;">
+                        <form id="formAccountSettings" method="GET" onsubmit="return false">
+                          <div class="row g-6">
+                            <div class="col-md-12">
+                              <label class="form-label" for="country" style="margin-top: 20px;">Payment For</label>
+                              <select id="country" class="select2 form-select">
+                                <option value="">Select Payment Reason</option>
+                                <option value="Australia">Registration Fee</option>
+                                <option value="Australia">After Offer Payment</option>
+                              </select>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="firstName" class="form-label" style="margin-top: 20px;">Amount</label>
+                              <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Amount"/>
+                            </div>
+                            <div class="col-md-12">
+                              <label class="form-label" for="country" style="margin-top: 20px;">Payment Status</label>
+                              <select id="country" class="select2 form-select">
+                                <option value="">Select Payment Status</option>
+                                <option value="Australia">Pending</option>
+                                <option value="Australia">Received</option>
+                              </select>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="firstName" class="form-label" style="margin-top: 20px;">Invoice number</label>
+                              <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Invoice Number"/>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="zipCode" class="form-label" style="margin-top: 20px;">Date</label>
+                              <input class="form-control" type="date" value="" id="html5-date-input"/>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-end" style="margin-top: 40px;">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                        </form>
+                        <div class="card" style="margin-top: 30px;">
+                          <div class="table-responsive text-nowrap">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Payment For<i class="ri-arrow-down-line"></i></th>
+                                  <th>Amount<i class="ri-arrow-down-line"></i></th>
+                                  <th>Invoice Number<i class="ri-arrow-down-line"></i></th>
+                                  <th>Date<i class="ri-arrow-down-line"></i></th>
+                                  <th>Action <i class="ri-arrow-down-line"></i></th>
+                                </tr>
+                              </thead>
+                              <tbody class="table-border-bottom-0">
+                                <tr>
+                                  <td>Registration Fee</td>
+                                  <td>150,000.00</td>                              
+                                  <td>#750460</td>                         
+                                  <td>2024/04/14</td>                         
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>After Offer Payment</td>
+                                  <td>-</td>                                 
+                                  <td>-</td>                          
+                                  <td>2024/04/05</td>                          
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div id="paypla" class="content-section" style="display: none;">
+                      <div class="card-body pt-4" style="margin: 0; padding: 0;">
+                        <form id="formAccountSettings" method="GET" onsubmit="return false">
+                          <div class="row g-6">
+                            <div class="col-md-12">
+                              <label class="form-label" for="country" style="margin-top: 20px;">Payment For</label>
+                              <select id="country" class="select2 form-select">
+                                <option value="">Select Payment Reason</option>
+                                <option value="Australia">Registration Fee</option>
+                                <option value="Australia">After Offer Payment</option>
+                              </select>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="firstName" class="form-label" style="margin-top: 20px;">Amount</label>
+                              <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Amount"/>
+                            </div>
+                            <div class="col-md-12">
+                              <label class="form-label" for="country" style="margin-top: 20px;">Payment Status</label>
+                              <select id="country" class="select2 form-select">
+                                <option value="">Select Payment Status</option>
+                                <option value="Australia">Pending</option>
+                                <option value="Australia">Received</option>
+                              </select>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="zipCode" class="form-label" style="margin-top: 20px;">Due Date</label>
+                              <input class="form-control" type="date" value="" id="html5-date-input"/>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="zipCode" class="form-label" style="margin-top: 20px;">Reminder Date</label>
+                              <input class="form-control" type="date" value="" id="html5-date-input"/>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-end" style="margin-top: 40px;">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                        </form>
+                        <div class="card" style="margin-top: 30px;">
+                          <div class="table-responsive text-nowrap">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Payment For<i class="ri-arrow-down-line"></i></th>
+                                  <th>Amount<i class="ri-arrow-down-line"></i></th>
+                                  <th>Due Date<i class="ri-arrow-down-line"></i></th>
+                                  <th>Reminder Date<i class="ri-arrow-down-line"></i></th>
+                                  <th>Action <i class="ri-arrow-down-line"></i></th>
+                                </tr>
+                              </thead>
+                              <tbody class="table-border-bottom-0">
+                                <tr>
+                                  <td>Registration Fee</td>
+                                  <td>200,000.00</td>                              
+                                  <td>2024/05/04</td>                         
+                                  <td>2024/04/14</td>                         
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>After Offer Payment</td>
+                                  <td>-</td>                                 
+                                  <td>2024/04/25</td>                          
+                                  <td>2024/04/05</td>                          
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div id="rechis" class="content-section" style="display: none;">
+                      <div class="card-body pt-4" style="margin: 0; padding: 0;">
+                        <form id="formAccountSettings" method="GET" onsubmit="return false">
+                          <div class="row g-6">
+                            <div class="col-md-12">
+                              <label class="form-label" for="country" style="margin-top: 20px;">Payment For</label>
+                              <select id="country" class="select2 form-select">
+                                <option value="">Select Payment Reason</option>
+                                <option value="Australia">Registration Fee</option>
+                                <option value="Australia">After Offer Payment</option>
+                              </select>
+                            </div>
+
+                            <div class="col-md-12">
+                              <label for="firstName" class="form-label" style="margin-top: 20px;">Amount</label>
+                              <input class="form-control" type="text" id="firstName" name="firstName" value="" placeholder="Enter Amount"/>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="zipCode" class="form-label" style="margin-top: 20px;">Date</label>
+                              <input class="form-control" type="date" value="" id="html5-date-input"/>
+                            </div>
+                            
+                          </div>
+                          <div class="d-flex justify-content-end" style="margin-top: 40px;">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                        </form>
+                        <div class="card" style="margin-top: 30px;">
+                          <div class="table-responsive text-nowrap">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Payment For<i class="ri-arrow-down-line"></i></th>
+                                  <th>Amount<i class="ri-arrow-down-line"></i></th>
+                                  <th>Date<i class="ri-arrow-down-line"></i></th>
+                                  <th>Action <i class="ri-arrow-down-line"></i></th>
+                                </tr>
+                              </thead>
+                              <tbody class="table-border-bottom-0">
+                                <tr>
+                                  <td>Registration Fee</td>
+                                  <td>200,000.00</td>                              
+                                  <td>2024/05/04</td>                         
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                  
+                                </tr>
+                                <tr>
+                                  <td>After Offer Payment</td>
+                                  <td>300,000.00</td>                                 
+                                  <td>2024/04/25</td>                          
+                                  <td style="font-size: 18px;"><i class="ri-pencil-line" style="margin-right: 20px;"></i><i class="ri-delete-bin-line"></i></td>                                    
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
               </div>
+
               <div class="con-2-g">
                   <h1>7</h1>
+                  
               </div>
             </div>
           </div>
