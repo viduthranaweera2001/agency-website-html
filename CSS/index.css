@@ -4,6 +4,24 @@
   font-family: inherit;
 }
 
+
+::-webkit-scrollbar {
+  width: 2px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
 .text{
     color: black;
     margin-left: 8px;
@@ -47,7 +65,7 @@
   .con-2{
     width: 100%;
     height: 40px;
-    /* background-color: blueviolet; */
+    background-color: rgb(246, 248, 250);
     border-bottom: 0.02px solid rgb(234, 205, 205);
     display: flex;
     font-family: inherit;
@@ -60,29 +78,36 @@
 
   .con-2-i{
     width: 195px;
+    background-color: white;
   }
 
   .con-2-ii{
-    width: 175px;
+    width: 160px;
+    background-color: white;
   }
 
   .con-2-iii{
     width: 180px;
+    background-color: white
   }
 
   .con-2-iv{
     width: 205px;
+    background-color: white
   }
 
   .con-2-v{
     width: 150px;
+    background-color: white;
   }
 
   .con-2-vi{
     width: 120px;
+    background-color: white;
   }
   .con-2-vii {
     width: 120px;
+    background-color: white;
   }
 
 
@@ -98,6 +123,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-bottom: 0.02px solid rgb(234, 205, 205);
   }
 
   .con-2-i img,
@@ -239,7 +265,71 @@
   }
 }
 
-.opt1,.opt2,.opt3,.opt4{
+.opt1,.opt2,.opt3,.opt4,.opt5,.opt6,.opt7{
   cursor: pointer;
 }
 
+.sq-con-7{
+  width: 100%;
+  min-height: 200px;
+  /* background-color: burlywood; */
+  margin-top: 40px;
+  padding: 0 25px;
+}
+
+.sq-con-8{
+  width: 100%;
+  /* background-color: rgb(59, 104, 104); */
+}
+
+.sq-con-9{
+  width: 100%;
+  min-height: 60px;
+  /* background-color: rgb(125, 224, 32); */
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sq-con-9-a,.sq-con-9-b,.sq-con-9-c{
+  width: 250px;
+  height: 60px;
+  /* background-color: cadetblue; */
+  border-radius: 6px;
+  border: 1px rgb(207, 205, 234) solid;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+@media(max-width:1025px) {
+  .sq-con-9{
+    width: 900px;
+  }
+  .sq-con-9-a,.sq-con-9-b,.sq-con-9-c{
+    width: 220px;
+  }
+}
+
+@media(max-width: 990px) {
+
+.sq-con-9 {
+  width: 70%;
+  flex-wrap: wrap;
+}
+.sq-con-9-b,.sq-con-9-c{
+  margin-top: 20px;
+}
+}
+
+@media(max-width: 750px) {
+
+  .sq-con-9 {
+    width: 40%;
+    flex-wrap: wrap;
+  }
+  .sq-con-9-b,.sq-con-9-c{
+    margin-top: 20px;
+  }
+  }

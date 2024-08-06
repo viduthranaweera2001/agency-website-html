@@ -143,3 +143,53 @@ const skillsDropdown = document.getElementById('skills');
     displayContent2();
   });
   
+  function displayContent3() {
+    const payplaContent = document.getElementById('paypla');
+    const rechisContent = document.getElementById('rechis');
+    const invoiContent = document.getElementById('invoi');
+    const con9a = document.querySelector('.sq-con-9-a');
+    const con9b = document.querySelectorAll('.sq-con-9-b');
+  
+    if (document.querySelector('.opt5').checked) {
+      payplaContent.style.display = 'block';
+      rechisContent.style.display = 'none';
+      invoiContent.style.display = 'none';
+      
+      con9a.style.border = '2px solid #007bff';
+      con9b.forEach(con => con.style.border = '1px solid rgb(207, 205, 234)');
+    } else if (document.querySelector('.opt6').checked) {
+      payplaContent.style.display = 'none';
+      rechisContent.style.display = 'block';
+      invoiContent.style.display = 'none';
+      
+      con9a.style.border = '1px solid rgb(207, 205, 234)';
+      con9b.forEach(con => con.style.border = '1px solid rgb(207, 205, 234)'); 
+      con9b[0].style.border = '2px solid #007bff';
+    } else if (document.querySelector('.opt7').checked) {
+      payplaContent.style.display = 'none';
+      rechisContent.style.display = 'none';
+      invoiContent.style.display = 'block';
+      
+      con9a.style.border = '1px solid rgb(207, 205, 234)';
+      con9b.forEach(con => con.style.border = '1px solid rgb(207, 205, 234)');
+      con9b[1].style.border = '2px solid #007bff';
+    }
+  }
+  
+  document.querySelector('.sq-con-9-a').addEventListener('click', function() {
+    document.querySelector('.opt5').checked = true;
+    displayContent3();
+  });
+  
+  document.querySelectorAll('.sq-con-9-b').forEach((element, index) => {
+    element.addEventListener('click', function() {
+      document.querySelector(`.opt${index + 6}`).checked = true;
+      displayContent3();
+    });
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.opt5').checked = true;
+    displayContent3();
+  });
+  
