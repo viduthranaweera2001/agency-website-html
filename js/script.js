@@ -193,3 +193,4 @@ const skillsDropdown = document.getElementById('skills');
     displayContent3();
   });
   
+  
